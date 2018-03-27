@@ -1,0 +1,13 @@
+# Avoid git tracking on these files
+node_modules
+dist
+build
+lib
+*.key
+*.cert
+*.crt
+*.pfx
+_DS_Store
+.env
+npm-debug.log*
+yarn-add.lock*
