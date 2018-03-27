@@ -8,18 +8,18 @@ module.exports = {
   mode: 'development',
   entry: [
     "webpack-hot-middleware/client",
-    path.join(__dirname, "client/index.js").
+    path.join(__dirname, "client/index.js")
   ],
-  output: [
+  output: {
     path: path.join(__dirname, "build"),
     filename: "bundle.js",
     publicPath: "/build/",
-  ],
+  },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
   ],
-  modules: {
+  module: {
     rules: [
       { test: /\.(woff2?|svg|jpe?g|png|gif|ico|eot|ttf)$/, loader: "url-loader?limit=10000" },
       {
