@@ -1,12 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import { Grid, Header } from "semantic-ui-react";
 
-const HomePage = () => (
-  <Grid centered columns={2} container>
-    <Grid.Column>
-      <Header as="h1">Edwin Moses(Full Stack Developer)</Header>
-    </Grid.Column>
-  </Grid>
-);
-
+class HomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
+      <Grid centered columns={1}>
+        <Header as="h1">Home page</Header>
+      </Grid>
+    );
+  }
+}
 export default HomePage;
