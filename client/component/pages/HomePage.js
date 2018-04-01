@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Grid, Header } from "semantic-ui-react";
 
 class HomePage extends Component {
   constructor(props) {
@@ -8,9 +7,7 @@ class HomePage extends Component {
   }
   render() {
     return (
-      <Grid centered columns={1}>
-        <Header as="h1">Home page</Header>
-      </Grid>
+      <div></div>
     );
   }
 }

@@ -9,9 +9,7 @@ class ContactPage extends Component {
 
   render() {
     return (
-      <Grid centered columns={1}>
-        <Header as="h2">Contact page</Header>
-      </Grid>
+      <div></div>
     );
   }
 }

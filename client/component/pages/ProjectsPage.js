@@ -8,9 +8,7 @@ class ProjectsPage extends Component {
   }
   render() {
     return (
-      <Grid centered columns={1}>
-        <Header as="h2">Projects page</Header>
-      </Grid>
+      <div></div>
     );
   }
 }

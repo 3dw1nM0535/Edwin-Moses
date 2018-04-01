@@ -14,11 +14,14 @@ class NavBar extends Component {
   render() {
     const { activeItem } = this.state;
     return (
-      <Menu secondary>
-        <Menu.Item as={Link} to="/" name="Edwin Moses" active={activeItem === "Edwin Moses"} onClick={this.handleClick} />
-        <Menu.Item as={Link} to="/projects" name="Projects" active={activeItem === "Projects"} onClick={this.handleClick} />
-        <Menu.Item as={Link} to="/blog" name="Blog" active={activeItem === "Blog"} onClick={this.handleClick} />
-        <Menu.Item as={Link} to="/contact" name="Contact me" active={activeItem === "Contact me"} onClick={this.handleClick} />
+      <Menu size="huge" stackable secondary>
+        <Menu.Item header as={Link} to="/" active={activeItem === "Full Stack Developer"} name="Full Stack Developer" onClick={this.handleClick} />
+        <Menu.Menu position="right">
+          <Menu.Item as={Link} to="/projects" name="My Work" active={activeItem === "My Work"} onClick={this.handleClick} />
+          <Menu.Item as={Link} to="/skills" name="My Skills" active={activeItem === "My Skills"} onClick={this.handleClick} />
+          <Menu.Item as={Link} to="/blog" name="Blog" active={activeItem === "Blog"} onClick={this.handleClick} />
+          <Menu.Item as={Link} to="/contact" name="Contact me" active={activeItem === "Contact me"} onClick={this.handleClick} />
+        </Menu.Menu>
       </Menu>
     );
   }
