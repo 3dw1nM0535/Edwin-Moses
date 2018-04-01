@@ -19,12 +19,14 @@ const app = express();
 const port = privateEnv.PORT;
 
 app.use(bodyParser.json());
+
 app.use(webpackDevMiddleware(compiler, {
   noInfo: true,
   hot: true,
   historyApiFallback: true,
   publicPath: config.output.publicPath,
 }));
+
 app.use(webpackHotMiddleware(compiler));
 
 app.get("*", (req, res) => {
