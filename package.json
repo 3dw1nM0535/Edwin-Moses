@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/3dw1nM0535/edwin-moses#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.4",
@@ -49,6 +50,7 @@
     "postcss-flexbugs-fixes": "^3.3.0",
     "postcss-loader": "^2.1.3",
     "prettier": "^1.11.1",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
