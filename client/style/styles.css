@@ -2,5 +2,9 @@ body {
   box-sizing: border-box;
 }
 .padding {
-  margin-top: 5rem !important;
+  margin-top: 7rem !important;
+}
+
+.spaced {
+  margin: 0.10rem !important;
 }
