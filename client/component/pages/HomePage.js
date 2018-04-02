@@ -24,7 +24,7 @@ class HomePage extends Component {
             <p>Check this out, I have code and build on <Link to="https://www.codecademy.com/3dw1nm0535">Codecademy</Link>
             and <Link to="https://www.freecodecamp.org/3dw1nm0535">freeCodeCamp</Link>. It took me a year to work through
             the curriculums and i'm still learning each and everyday. The community is vibrant.</p>
-            <p>I'm an activist with <Link to="https://twitter.com/_100DaysOfCode">#100daysofcode</Link>. I code everyday.
+            <p>I'm an activist at <Link to="https://twitter.com/_100DaysOfCode">#100DaysOfCode</Link>. I code everyday.
             I read about self-taught developer stories. I choose to stay freshy and motivated.</p>
           </Segment>
         </Grid.Column>
