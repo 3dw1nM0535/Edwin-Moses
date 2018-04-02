@@ -9,6 +9,8 @@ import webpackDevMiddleware from "webpack-dev-middleware";
 import config from "../webpack.config";
 import privateEnv from "./config/private_env";
 
+import projects from "./routes/projects";
+
 config.plugins.push(new webpack.HotModuleReplacementPlugin());
 
 const compiler = webpack(config);
@@ -30,7 +32,9 @@ app.use(webpackDevMiddleware(compiler, {
 app.use(webpackHotMiddleware(compiler));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.resolve("./client", "index.html"));
 });
+
+app.use("/api/projects", projects);
 
 app.listen(port);
