@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { Grid } from "semantic-ui-react";
 
 import { fetchProjects } from "../../actions/actions";
+import ProjectCard from "../views/ProjectItemView";
 
 class ProjectsListPage extends Component {
   constructor(props) {
@@ -14,8 +15,12 @@ class ProjectsListPage extends Component {
   componentDidMount = () => this.props.fetchProjects(this.props.match.params.title);
 
   render() {
+    const { projects } = this.props;
+
     return (
-      <Grid></Grid>
+      <Grid container stackable centered>
+        <ProjectCard projects={projects} />
+      </Grid>
     );
   }
 }
@@ -27,6 +32,13 @@ ProjectsListPage.propTypes = {
     }).isRequired,
   }).isRequired,
   fetchProjects: PropTypes.func.isRequired,
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-export default connect(null, { fetchProjects })(ProjectsListPage);
+function mapStateToProps(state) {
+  return {
+    projects: state.projects,
+  };
+}
+
+export default connect(mapStateToProps, { fetchProjects })(ProjectsListPage);
