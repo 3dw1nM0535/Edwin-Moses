@@ -31,7 +31,11 @@ router.post("/", (req, res) => {
 
 router.post("/find", (req, res) => {
   Project.find({ title: req.body.title }).then((result) => {
-    console.log(result);
+    if (result) {
+      res.json({ projects: result });
+    } else {
+      res.json({});
+    }
   });
 });
 
