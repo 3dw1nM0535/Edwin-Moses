@@ -15,3 +15,14 @@ body {
 .project-card {
   padding: 2rem !important;
 }
+
+.coming-soon {
+  margin-top: 10rem !important;
+  font-size: 5rem !important;
+  color: crimson !important;
+}
+
+#countdown {
+  font-size: 3rem !important;
+  color: forestgreen !important;
+}
