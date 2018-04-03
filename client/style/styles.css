@@ -8,3 +8,10 @@ body {
 .spaced {
   margin: 0.10rem !important;
 }
+.card-margin {
+  margin: 1rem !important;
+}
+
+.project-card {
+  padding: 2rem !important;
+}
