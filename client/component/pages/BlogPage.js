@@ -7,12 +7,13 @@ class BlogPage extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
+    countdownTimer();
     return (
       <Grid centered>
         <Header className="coming-soon" as="h1" size="huge">Coming Soon</Header>
         <Grid.Row>
-        {countdownTimer()}
           <Header id="countdown" as="h1"></Header>
         </Grid.Row>
       </Grid>
