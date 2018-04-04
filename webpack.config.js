@@ -3,9 +3,11 @@
 var path = require("path");
 var webpack = require("webpack");
 var autoprefixer = require("autoprefixer");
+var UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
+  devtool: "source-map",
   entry: [
     "webpack-hot-middleware/client",
     path.join(__dirname, "client/index.js")
@@ -16,8 +18,12 @@ module.exports = {
     publicPath: "/build/",
   },
   plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
+    new UglifyJSPlugin({
+      sourceMap: true,
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify("production"),
+    }),
   ],
   module: {
     rules: [
