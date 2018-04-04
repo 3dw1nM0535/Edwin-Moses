@@ -10,6 +10,7 @@ import config from "../webpack.config";
 import privateEnv from "./config/private_env";
 
 import projects from "./routes/projects";
+import email from "./routes/email";
 
 config.plugins.push(new webpack.HotModuleReplacementPlugin());
 
@@ -36,5 +37,6 @@ app.get("*", (req, res) => {
 });
 
 app.use("/api/projects", projects);
+app.use("/api/email", email);
 
 app.listen(port);
