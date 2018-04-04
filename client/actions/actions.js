@@ -10,3 +10,6 @@ export const fetchProjects = title => dispatch =>
 
 export const postProject = project =>
   axios.post("/api/projects", { project }).then(res => res.data.projects);
+
+export const sendMail = email => dispatch =>
+  axios.post("/api/email", { email }).then(res => res.data.message);
