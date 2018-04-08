@@ -7,10 +7,10 @@
     "build:webpack": "webpack --config webpack.config.js",
     "clean": "rimraf build",
     "build": "npm run clean && npm run build:webpack",
-    "clean-server": "rm -rf src && mkdir ssrc",
-    "build-server": "babel -d ./src ./server -s",
-    "server": "npm run clean-server && npm run build-server",
-    "start": "node ./src/index.js",
+    "clean-server": "rm -rf src && mkdir src",
+    "server": "babel -d ./src ./server -s",
+    "build-server": "npm run clean-server && npm run server",
+    "start": "node babel-node ./server/index.js",
     "lint": "eslint client server"
   },
   "repository": {
