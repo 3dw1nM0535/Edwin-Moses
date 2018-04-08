@@ -10,7 +10,7 @@
     "clean-server": "rm -rf src && mkdir src",
     "server": "babel -d ./src ./server -s",
     "build-server": "npm run clean-server && npm run server",
-    "start": "node babel-node ./server/index.js",
+    "start": "node  ./src/index.js",
     "lint": "eslint client server"
   },
   "repository": {
