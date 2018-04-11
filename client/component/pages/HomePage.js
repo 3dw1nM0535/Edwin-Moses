@@ -24,7 +24,9 @@ class HomePage extends Component {
             and <a target="_blank" href="https://www.freecodecamp.org/3dw1nm0535">freeCodeCamp</a>. It took me a year to work through
             the curriculums and i'm still learning each and everyday. The community is vibrant.</p>
             <p>I'm an activist at <a target="_blank" href="https://twitter.com/_100DaysOfCode">#100DaysOfCode</a>. I code everyday.
-            I read about self-taught developer stories. I choose to stay freshy and motivated. Cheeck me out at <a target="_blank" href="https://github.com/3dw1nM0535">GitHub</a></p>
+            I read about self-taught developer stories. I choose to stay frosty and motivated.
+            </p>
+            <p><a target="_blank" href="https://github.com/3dw1nM0535">GitHub</a> <a href="https://twitter.com/edwinloms" target="_blank">Twitter</a> <a href="https://www.linkedin.com/in/edwin-moses-2b0240115" target="_blank">LinkedIn</a></p>
           </Segment>
         </Grid.Column>
       </Grid>

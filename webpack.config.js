@@ -27,7 +27,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: __dirname + "/client/index.html",
-    })
+    }),
   ],
   module: {
     rules: [
