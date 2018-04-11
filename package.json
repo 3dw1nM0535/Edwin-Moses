@@ -4,7 +4,7 @@
   "description": "Edwin Moses portfolio",
   "main": "server/index.js",
   "scripts": {
-    "build:webpack": "webpack --config webpack.config.js",
+    "build:webpack": "webpack --config webpack.config.js --progress",
     "clean": "rimraf build",
     "build": "npm run clean && npm run build:webpack",
     "clean-server": "rm -rf src && mkdir src",
@@ -49,6 +49,7 @@
     "express": "^4.16.3",
     "file-loader": "^1.1.11",
     "history": "^4.7.2",
+    "html-webpack-plugin": "^3.2.0",
     "mongoose": "^5.0.11",
     "postcss-flexbugs-fixes": "^3.3.0",
     "postcss-loader": "^2.1.3",

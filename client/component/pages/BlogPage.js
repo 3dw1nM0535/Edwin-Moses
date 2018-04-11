@@ -18,8 +18,10 @@ class BlogPage extends Component {
   tick = () => {
     // get count down date
     const countDownDate = new Date("May 19, 2018 15:37:25").getTime();
+
     // get curent down
     const now = new Date().getTime();
+
     // calculate distance between count down date and current date
     const distance = countDownDate - now;
 
