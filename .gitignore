@@ -1,7 +1,6 @@
 # Avoid git tracking on these files
 node_modules
 dist
-build
 lib
 *.key
 *.cert
